@@ -18,7 +18,7 @@ return totalBooksBorrowed ;
 }
 
 
-function findById(array, id) {
+function findById(array, id) {     //helper function
   return array.find((element) => element.id === id);
  }
 
@@ -30,7 +30,7 @@ books.forEach((book) =>
       checkedOut.push(book);
     }
   }));
-  checkedOut.forEach((book) => book.author = findById(authors, book.authorId)); 
+  checkedOut.forEach((book) => book.author = findById(authors, book.authorId));   //used helper function
   return checkedOut;
 }
 
