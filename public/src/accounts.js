@@ -1,10 +1,10 @@
 function findAccountById(accounts, id) {
   return accounts.find((account) => account.id === id) 
-};
+}
 
 function sortAccountsByLastName(accounts) {     
 return accounts.sort((nameOne,nameTwo) => nameOne.name.last.toLowerCase() > nameTwo.name.last.toLowerCase() ? 1: -1);
-};
+}
 
 function getTotalNumberOfBorrows(account, books) {
 if (!account || !books || books.length === 0) return 0;
