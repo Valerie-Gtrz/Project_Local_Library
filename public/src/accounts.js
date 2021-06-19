@@ -8,7 +8,7 @@ return accounts.sort((nameOne,nameTwo) => nameOne.name.last.toLowerCase() > name
 
 function getTotalNumberOfBorrows(account, books) {
 if (!account || !books || books.length === 0) return 0;
-totalBooksBorrowed = 0;
+let totalBooksBorrowed = 0;
 books.map((book) =>                                                           
   book.borrows.forEach((borrow) => {
     if(borrow.id === account.id) {
