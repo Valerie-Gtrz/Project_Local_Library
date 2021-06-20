@@ -1,15 +1,20 @@
 const findAccountById = require("./accounts.js").findAccountById;
 
-function findById(array, id) {
-  return array.find((element) => element.id === id);
+function findById(array, id) {   //helper function
+  return array.find((element) => element.id === id);  
 }
+<<<<<<< HEAD
 
 function findAuthorById(authors, id) {
   return findById(authors, id);
+=======
+function findAuthorById(authors, id) {               
+  return findById(authors, id);       //used helper function
+>>>>>>> 332fe4b77e45e382dceb9e1bf7eb5138b48e1022
 }
 
-function findBookById(books, id) {
-  return findById(books, id);
+function findBookById(books, id) {                    
+  return findById(books, id);        //used helper function
 }
 
 function partitionBooksByBorrowedStatus(books) {
